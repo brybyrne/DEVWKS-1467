@@ -1,6 +1,6 @@
 # Welcome to DEVWKS-1467
 
-This repo is the companion for a DevNet Workshop delivered at Cisco Live in June of 2022. The workshop leverages Cisco's yangsuite to walk through the basics of NETCONF and YANG. Basic details on setting up the invironment can be found below. A high level lab guide can be found here.
+This repo is the companion for a DevNet Workshop delivered at Cisco Live in June of 2022. The workshop leverages Cisco's [yangsuite](https://developer.cisco.com/yangsuite/) to walk through the basics of NETCONF and YANG. A high level lab guide can be found here.
 
 <br>
 ===================================<br>
