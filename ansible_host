@@ -1,0 +1,6 @@
+[all:vars]
+ansible_connection=netconf
+ansible_password=C1sco12345
+
+[MY_HOST_NAME]
+198.18.133.100
