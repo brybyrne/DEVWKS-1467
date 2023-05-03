@@ -1,4 +1,4 @@
 #!/bin/bash
 
-docker-compose -f yangsuite/docker_brybyrne/docker-compose.yml stop
+docker-compose -f yangsuite/docker/docker-compose.yml stop
 
