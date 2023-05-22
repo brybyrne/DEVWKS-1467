@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker-compose -f yangsuite/docker_brybyrne/docker-compose.yml start
+docker-compose -f yangsuite/docker/docker-compose.yml start

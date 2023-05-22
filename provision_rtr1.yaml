@@ -1,0 +1,64 @@
+- name : Provision Router 1
+  hosts: MY_HOST_NAME
+  connection: netconf
+  gather_facts: no
+
+  tasks:
+    - name: NETCONF RPC
+      netconf_config:
+        xml: |
+            <config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+              <interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+                <interface>
+                  <name>GigabitEthernet1</name>
+                  <description>**DO NOT MODIFY**</description>
+                </interface>
+                <interface>
+                  <name>GigabitEthernet2</name>
+                  <description>This is Interface 2</description>
+                  <enabled>true</enabled>
+                  <ipv4 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip">
+                    <address>
+                      <ip>172.16.20.1</ip>
+                      <netmask>255.255.255.0</netmask>
+                    </address>
+                  </ipv4>
+                </interface>
+                <interface>
+                  <name>GigabitEthernet3</name>
+                  <description>This Is Interface 3</description>
+                  <enabled>true</enabled>
+                  <ipv4 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip">
+                    <address>
+                      <ip>10.20.30.1</ip>
+                      <netmask>255.255.255.0</netmask>
+                    </address>
+                  </ipv4>
+                </interface>
+                <interface>
+                  <name>Loopback1</name>
+                  <description>This is Loopback 1</description>
+                  <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:softwareLoopback</type>
+                  <enabled>true</enabled>
+                  <ipv4 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip">
+                    <address>
+                      <ip>1.1.1.1</ip>
+                      <netmask>255.255.255.255</netmask>
+                    </address>
+                  </ipv4>
+                </interface>
+                <interface>
+                  <name>Loopback2</name>
+                  <description>This is Loopback 2</description>
+                  <type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:softwareLoopback</type>
+                  <enabled>true</enabled>
+                  <ipv4 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip">
+                    <address>
+                      <ip>2.2.2.2</ip>
+                      <netmask>255.255.255.255</netmask>
+                    </address>
+                  </ipv4>
+                </interface>
+              </interfaces>
+            </config>
+
