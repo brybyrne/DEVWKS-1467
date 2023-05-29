@@ -111,6 +111,8 @@ This repo is the companion for a DevNet Workshop delivered at Cisco Live in June
 ### Task 8 - Auto generate code examples
 
 #### Sub Task 8a
+
+
 ![image](img/Task_8a.png)
 1. Change RPC Options to "Explicit - only report default values if explicitly set"
 2. Click Build RPC
@@ -131,28 +133,9 @@ Optional - from the terminal run and review the python code
 
 Run the python script:
 
-``` python script.py -a 198.18.133.100 -u admin -p C1sco12345 ```
+``` python script-3.py -a sandbox-iosxe-latest-1.cisco.com -u admin -p C1sco12345 ```
 
-The output should be XML showing the status of all interfaces currently shutdown.
-
-#### Sub Task 8d
-
-Optional - from the terminal run and review the ansible playbook code
-
-``` cat task_8.yaml ```
-
-Run the python script:
-
-``` ansible-playbook task_8.yaml ```
-
-The playbook should complete and show 1 change
-
-#### Sub Task 8e
-
-
-Run the python script and confirm there are no more interfaces in a shutdown state:
-
-``` python script.py -a 198.18.133.100 -u admin -p C1sco12345 ```
+The output should be XML showing the status of interface Loopback1467xx
 
 
 ## THE END
