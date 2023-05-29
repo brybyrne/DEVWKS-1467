@@ -4,10 +4,6 @@ prep_1467:
 	@echo "*** Opening the Lab Guide File ***"
 #	xdg-open https://github.com/brybyrne/DEVWKS-1467/blob/main/README.md
 
-provision:
-	@echo "*** Provision router ***"
-	ansible-playbook provision_rtr1.yaml
-
 yangstart:
 	@echo "*** Starting yangsuite ***"
 	./yang_up.sh
