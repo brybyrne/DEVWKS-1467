@@ -2,12 +2,12 @@
 
 prep_1467:
 	@echo "*** Opening the Lab Guide File ***"
-#	xdg-open https://github.com/brybyrne/DEVWKS-1467/blob/main/README.md
+	xdg-open https://github.com/brybyrne/DEVWKS-1467/blob/main/README.md
 
 yangstart:
 	@echo "*** Starting yangsuite ***"
 	./yang_up.sh
-#	xdg-open http://0.0.0.0
+	xdg-open http://0.0.0.0
 
 start_1467: yangstart provision prep_1467
 
